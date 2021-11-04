@@ -1,0 +1,47 @@
+/* ---header--- */
+.header {
+  width: 100%;
+  background-color: $extra;
+  height: 70px;
+  padding: 10px 20px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    width: 100%;
+
+    &__logo {
+      text-transform: capitalize;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      transform-origin: left;
+    }
+    &__icon {
+      display: none;
+      cursor: pointer;
+    }
+    &__nav {
+      &__button {
+        text-decoration: none;
+        transform-origin: left;
+        text-transform: uppercase;
+        font-style: bold;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+}
