@@ -30,6 +30,8 @@
       cursor: pointer;
     }
     &__nav {
+      transform: scaleY(1);
+      transform-origin: top;
       &__button {
         text-decoration: none;
         transform-origin: left;

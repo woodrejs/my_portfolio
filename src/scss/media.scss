@@ -1,147 +1,149 @@
 /* ---media--- */
 @media screen and (max-width: 991px) {
-    .hero {
-      &__box {
-        padding: 0;
-        &__image {
-          grid-column: 1 / 7;
-        }
-      }
-    }
-    .tech {
-      &__box {
-        &__lists {
-          grid-column: 2 / 6;
-        }
+  .hero {
+    &__box {
+      padding: 0;
+      &__image {
+        grid-column: 1 / 7;
       }
     }
   }
-  @media screen and (max-width: 767px) {
-    .header {
-      &__box {
-        &__logo {
+  .tech {
+    &__box {
+      &__lists {
+        grid-column: 2 / 6;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    &__box {
+      &__logo {
+        font-size: 12px;
+      }
+      &__nav {
+        &__button {
           font-size: 12px;
         }
-        &__nav {
-          &__button {
-            font-size: 12px;
-          }
-        }
       }
     }
-    .hero {
-      &__box {
-        &__header {
-          grid-column: 1/ 7;
-          align-self: center;
-          justify-self: center;
-          margin: 0;
-  
-          &__title {
-            font-size: 45px;
-            line-height: 130%;
-            text-align: center;
-          }
-          &__subTitle {
-            text-align: center;
-          }
-        }
-      }
-    }
-    .about {
-      &__box {
-        display: flex;
-        flex-direction: column;
-  
+  }
+  .hero {
+    &__box {
+      &__header {
+        grid-column: 1/ 7;
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+
         &__title {
-          margin-bottom: 20px;
+          font-size: 45px;
+          line-height: 130%;
+          text-align: center;
+        }
+        &__subTitle {
+          text-align: center;
         }
       }
     }
-    .tech {
-      &__box {
-        display: flex;
-        flex-direction: column;
-        &__title {
-          margin-bottom: 20px;
-        }
-        &__lists {
-          grid-column: 2 / 7;
-        }
-      }
-    }
-  
-    .projects {
+  }
+  .about {
+    &__box {
       display: flex;
       flex-direction: column;
-      padding: 0;
+
       &__title {
         margin-bottom: 20px;
-        padding: 0 20px;
       }
     }
-    .project {
-      &__content {
-        padding: 0 20px;
+  }
+  .tech {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      &__title {
+        margin-bottom: 20px;
       }
-      &__buttons {
-        padding: 0 20px;
+      &__lists {
+        grid-column: 2 / 7;
       }
     }
-  
-    .footer {
-      &__box {
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    &__title {
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+  }
+  .project {
+    &__content {
+      padding: 0 20px;
+    }
+    &__buttons {
+      padding: 0 20px;
+    }
+  }
+
+  .footer {
+    &__box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 479px) {
+  .header {
+    &__box {
+      &__nav {
+        transform: scaleY(0);
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        height: 60px;
+        justify-content: flex-end;
+        bottom: -55px;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        z-index: 100;
+        background-color: $extra;
+      }
+      &__icon {
+        display: block;
       }
     }
   }
-  @media screen and (max-width: 479px) {
-    .header {
-      &__box {
-        &__nav {
+  .hero {
+    &__box {
+      &__image {
+        height: 90vh;
+      }
+      &__header {
+        &__title {
+          font-size: 35px;
+        }
+        &__subTitle {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .address {
+    &__box {
+      &__table {
+        &__cell {
           display: none;
-          position: absolute;
-          height: 60px;
-          justify-content: flex-end;
-          bottom: -55px;
-          width: 100%;
-          margin: 0;
-          left: 0;
-          z-index: 100;
-          background-color: $extra;
-        }
-        &__icon {
-          display: block;
-        }
-      }
-    }
-    .hero {
-      &__box {
-        &__image {
-          height: 90vh;
-        }
-        &__header {
-          &__title {
-            font-size: 35px;
-          }
-          &__subTitle {
-            font-size: 12px;
-          }
-        }
-      }
-    }
-    .address {
-      &__box {
-        &__table {
-          &__cell {
-            display: none;
-            &--data {
-              display: inline;
-              padding: 0;
-            }
+          &--data {
+            display: inline;
+            padding: 0;
           }
         }
       }
     }
   }
+}
