@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const options = {
       root: null,
       rootMargin: "-10px",
-      threshold: 0.5,
+      threshold: 0.1,
     };
 
     //text animations

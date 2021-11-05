@@ -133,6 +133,25 @@
       }
     }
   }
+  .project {
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__button {
+        width: 80vw;
+        text-align: center;
+      }
+    }
+  }
+  .footer {
+    &__box {
+      &__button {
+        padding-top: 20px;
+      }
+    }
+  }
   .address {
     &__box {
       &__table {
