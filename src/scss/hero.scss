@@ -17,8 +17,11 @@
       grid-row: 1 / 2;
       height: 70vh;
       width: 100%;
-
-      opacity: 0;
+      background-image: url("../../dist/assets/images/main_img.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  
     }
     &__header {
       grid-column: 2 / 7;
@@ -31,10 +34,12 @@
         transform-origin: left;
         text-transform: capitalize;
         line-height: 110%;
+        z-index: 100;
       }
       &__subTitle {
         transform-origin: left;
         text-transform: uppercase;
+        z-index: 100;
       }
     }
   }

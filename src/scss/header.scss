@@ -32,6 +32,7 @@
     &__nav {
       transform: scaleY(1);
       transform-origin: top;
+      display: flex;
       &__button {
         text-decoration: none;
         transform-origin: left;

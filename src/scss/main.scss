@@ -13,6 +13,16 @@ body {
   align-items: flex-start;
   overflow-x: hidden;
 }
+.imageAnimation {
+  opacity: 0;
+}
+
+.titleAnimation,
+.textAnimation {
+  transform: rotate(15deg);
+  opacity: 0;
+  transform-origin: left;
+}
 
 .shadow {
   -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);

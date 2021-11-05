@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Maciej Szczepański - Portfolio</title>
+    <link rel="stylesheet" href="./main.css">
   </head>
   <body>
     <div id="root">
@@ -12,16 +13,16 @@
         <!-- header -->
         <header class="header">
           <div class="header__box">
-            <span class="header__box__logo title">Maciej Szczepański</span>
+            <span class="header__box__logo">Maciej Szczepański</span>
             <img
               class="header__box__icon"
               src="./assets/icons/menu_icon.svg"
               alt="menu_icon"
             />
             <nav class="header__box__nav">
-              <a class="header__box__nav__button title" href="#start">start</a>
-              <a class="header__box__nav__button title" href="#projects">projekty</a>
-              <a class="header__box__nav__button title" href="#contact">kontakt</a>
+              <div class='titleAnimation'><a class="header__box__nav__button" href="#start">start</a></div>
+              <div class="titleAnimation"><a class="header__box__nav__button" href="#projects">projekty</a></div>
+              <div class="titleAnimation"><a class="header__box__nav__button" href="#contact">kontakt</a></div>
             </nav>
           </div>
         </header>
@@ -31,19 +32,19 @@
           <!-- hero -->
           <section class="hero">
             <div class="hero__box">
-              <img src='./assets//images/main_img.jpg' class="hero__box__image shadow opacityAnimation"></img>
+              <img src='./assets//images/main_img.jpg' class="hero__box__image shadow imageAnimation"></img>
               <article class="hero__box__header">
-                <h1 class="hero__box__header__title title">dlaczego warto?</h1>
-                <h3 class="hero__box__header__subTitle title">poznajmy sie</h3>
+                <h1 class="hero__box__header__title titleAnimation">dlaczego warto?</h1>
+                <h3 class="hero__box__header__subTitle titleAnimation">poznajmy sie</h3>
               </article>
             </div>
           </section>
 
           <!-- about -->
           <section class="about">
-            <article class="about__box">
-              <h4 class="about__box__title title">kilka słów o mnie</h4>
-              <p class="about__box__text text">
+            <article class="about__box load">
+              <h4 class="about__box__title titleAnimation">kilka słów o mnie</h4>
+              <p class="about__box__text textAnimation">
                 Swoją przygodę z programowaniu zacząłem przypadkiem od prostych zmian w
                 stylach, podczas tworzenia swojej pierwszej strony na wordpressie. Temat
                 zainteresował mnie i pochłonął do tego stopnia, że zacząłem poświęcać na
@@ -55,9 +56,9 @@
                 zadań.
               </p>
             </article>
-            <article class="about__box">
-              <h4 class="about__box__title title">kierunek rozwoju</h4>
-              <p class="about__box__text text">
+            <article class="about__box load">
+              <h4 class="about__box__title titleAnimation ">kierunek rozwoju</h4>
+              <p class="about__box__text textAnimation">
                 Tak jak wspomniałem wcześniej, największą przyjemność sprawia mi frontend.
                 Z tego powodu chciałbym rozwijać swoje umiejętności przede wszystkim w tym
                 kierunku. Do swoich projektów wykorzystuje głównie Reacta i React Native.
@@ -70,34 +71,34 @@
           <!-- tech -->
           <section class="tech">
             <article class="tech__box">
-              <h4 class="tech__box__title title">technologie</h4>
+              <h4 class="tech__box__title titleAnimation">technologie</h4>
               <div class="tech__box__lists">
                 <ul class="tech__box__list tech__box__list--one">
-                  <li class="tech__box__list__item text">HTML</li>
-                  <li class="tech__box__list__item text">CSS</li>
-                  <li class="tech__box__list__item text">JAVA SCRIPT</li>
-                  <li class="tech__box__list__item text">REACT</li>
-                  <li class="tech__box__list__item text">REDUX</li>
-                  <li class="tech__box__list__item text">RECT-NATIVE</li>
-                  <li class="tech__box__list__item text">SASS</li>
+                  <li class="tech__box__list__item textAnimation">HTML</li>
+                  <li class="tech__box__list__item textAnimation">CSS</li>
+                  <li class="tech__box__list__item textAnimation">JAVA SCRIPT</li>
+                  <li class="tech__box__list__item textAnimation">REACT</li>
+                  <li class="tech__box__list__item textAnimation">REDUX</li>
+                  <li class="tech__box__list__item textAnimation">RECT-NATIVE</li>
+                  <li class="tech__box__list__item textAnimation">SASS</li>
                 </ul>
                 <ul class="tech__box__list tech__box__list--two">
-                  <li class="tech__box__list__item text">STRIPE</li>
-                  <li class="tech__box__list__item text">STRAPI</li>
-                  <li class="tech__box__list__item text">GRAPHQL</li>
-                  <li class="tech__box__list__item text">FIREBASE</li>
-                  <li class="tech__box__list__item text">NODE JS</li>
-                  <li class="tech__box__list__item text">MONGO DB</li>
-                  <li class="tech__box__list__item text">PHP</li>
+                  <li class="tech__box__list__item textAnimation">STRIPE</li>
+                  <li class="tech__box__list__item textAnimation">STRAPI</li>
+                  <li class="tech__box__list__item textAnimation">GRAPHQL</li>
+                  <li class="tech__box__list__item textAnimation">FIREBASE</li>
+                  <li class="tech__box__list__item textAnimation">NODE JS</li>
+                  <li class="tech__box__list__item textAnimation">MONGO DB</li>
+                  <li class="tech__box__list__item textAnimation">PHP</li>
                 </ul>
                 <ul class="tech__box__list tech__box__list-three">
-                  <li class="tech__box__list__item text">GIT</li>
-                  <li class="tech__box__list__item text">FIGMA</li>
-                  <li class="tech__box__list__item text">STYLED-COMPONENTS</li>
-                  <li class="tech__box__list__item text">BOOTSTRAP</li>
-                  <li class="tech__box__list__item text">TYPE SCRIPT</li>
-                  <li class="tech__box__list__item text">ADOBE ILLUSTRATOR</li>
-                  <li class="tech__box__list__item text">EXPRESS</li>
+                  <li class="tech__box__list__item textAnimation">GIT</li>
+                  <li class="tech__box__list__item textAnimation">FIGMA</li>
+                  <li class="tech__box__list__item textAnimation">STYLED-COMPONENTS</li>
+                  <li class="tech__box__list__item textAnimation">BOOTSTRAP</li>
+                  <li class="tech__box__list__item textAnimation">TYPE SCRIPT</li>
+                  <li class="tech__box__list__item textAnimation">ADOBE ILLUSTRATOR</li>
+                  <li class="tech__box__list__item textAnimation">EXPRESS</li>
                 </ul>
               </div>
             </article>
@@ -105,23 +106,23 @@
 
           <!-- projects -->
           <section class="projects" id="projects">
-            <h4 class="projects__title title">wybrane projekty</h4>
+            <h4 class="projects__title titleAnimation">wybrane projekty</h4>
             <div class="projects__box">
               <!-- project -->     
               <article class="project">
-                <div class="project__image shadow opacityAnimation">
+                <div class="project__image shadow imageAnimation ">
                   <div class="project__image__photo"></div>
                   <div class="project__image__badge">
-                    <h2 class="project__image__badge__number text">01</h2>
+                    <h2 class="project__image__badge__number">01</h2>
                   </div>
                 </div>
-                <div class="project__content">
-                  <h2 class="project__content__title title">Lorem Ipsum</h2>
-                  <h4 class="project__content__tags title">
+                <div class="project__content ">
+                  <h2 class="project__content__title titleAnimation">Lorem Ipsum</h2>
+                  <h4 class="project__content__tags titleAnimation">
                     Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry
                   </h4>
-                  <p class="project__content__text text">
+                  <p class="project__content__text textAnimation">
                     Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry. Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s, when an unknown printer took a galley of type and
@@ -153,9 +154,9 @@
         <!-- footer -->
         <footer class="footer" id="contact">
           <section class="footer__box">
-            <h4 class="footer__box__title title">kontakt</h4>
+            <h4 class="footer__box__title titleAnimation">kontakt</h4>
             <article class="footer__box__content">
-              <p class="footer__box__content__text text">
+              <p class="footer__box__content__text textAnimation">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the
                 1500.
@@ -163,22 +164,22 @@
               <address class="address">
                 <table class="address__box">
                   <tr class="address__box__table">
-                    <td class="address__box__table__cell text">telefon:</td>
+                    <td class="address__box__table__cell textAnimation">telefon:</td>
                     <td
                       class="
                         address__box__table__cell address__box__table__cell--data
-                        text
+                        titleAnimation
                       "
                     >
                       +48 531 892 218
                     </td>
                   </tr>
                   <tr class="address__box__table">
-                    <td class="address__box__table__cell text">email:</td>
+                    <td class="address__box__table__cell textAnimation">email:</td>
                     <td
                       class="
                         address__box__table__cell address__box__table__cell--data
-                        text
+                        titleAnimation
                       "
                     >
                       maciej.pawel.szczepanski@gmail.com
@@ -210,4 +211,3 @@
     <script src="./bundle.js"></script>
   </body>
 </html>
-
