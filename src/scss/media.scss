@@ -33,17 +33,19 @@
     &__box {
       &__header {
         grid-column: 1/ 7;
-        align-self: center;
-        justify-self: center;
         margin: 0;
+        justify-self: start;
+        padding-left: 20px;
+        align-self: end;
+        padding-bottom: 5vh;
 
         &__title {
           font-size: 45px;
           line-height: 130%;
-          text-align: center;
+          text-align: start;
         }
         &__subTitle {
-          text-align: center;
+          text-align: start;
         }
       }
     }
@@ -120,15 +122,14 @@
   }
   .hero {
     &__box {
-      &__image {
-        height: 90vh;
-      }
       &__header {
+        align-self: center;
+        padding-bottom: 0;
         &__title {
-          font-size: 35px;
+          font-size: 42px;
         }
         &__subTitle {
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }

@@ -19,6 +19,7 @@
     grid-column: 2 / 7;
   }
 }
+
 .project {
   display: flex;
   flex-direction: column;
@@ -30,7 +31,7 @@
     overflow: hidden;
     background-image: url("../../dist/assets/images/project_01.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     position: relative;
     &__badge {
@@ -50,9 +51,9 @@
   }
   &__content {
     &__title {
-      text-transform: capitalize;
       padding: 10px 0;
       transform-origin: left;
+      padding-top: 20px;
     }
     &__tags {
       text-transform: capitalize;
