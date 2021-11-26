@@ -7,6 +7,9 @@
   color: $dark;
   scroll-behavior: smooth;
   outline: none;
+
+  scrollbar-color: $dark $light;
+  scrollbar-width: thin;
 }
 body {
   display: flex;

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Maciej Szczepański - Portfolio</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="favicon" type="image/jpg" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <div id="root">
@@ -20,9 +21,15 @@
               alt="menu_icon"
             />
             <nav class="header__box__nav">
-              <div class='titleAnimation'><a class="header__box__nav__button" href="#start">start</a></div>
-              <div class="titleAnimation"><a class="header__box__nav__button" href="#projects">projekty</a></div>
-              <div class="titleAnimation"><a class="header__box__nav__button" href="#contact">kontakt</a></div>
+              <div class="titleAnimation">
+                <a class="header__box__nav__button" href="#start">start</a>
+              </div>
+              <div class="titleAnimation">
+                <a class="header__box__nav__button" href="#projects">projekty</a>
+              </div>
+              <div class="titleAnimation">
+                <a class="header__box__nav__button" href="#contact">kontakt</a>
+              </div>
             </nav>
           </div>
         </header>
@@ -32,7 +39,15 @@
           <!-- hero -->
           <section class="hero">
             <div class="hero__box">
-              <img src='./assets/images/main_img.jpg' class="hero__box__image shadow imageAnimation"></img>
+              <picture class="hero__box__image">
+                <source media="(max-width: 479px)" srcset="./assets/images/me_767.jpg" />
+                <source media="(max-width: 767px)" srcset="./assets/images/me_991.jpg" />
+                <img
+                  class="hero__box__image imageAnimation shadow"
+                  src="./assets/images/me_1366.jpg"
+                  alt="my_photo"
+                />
+              </picture>
               <article class="hero__box__header">
                 <h1 class="hero__box__header__title titleAnimation">portfolio</h1>
                 <h3 class="hero__box__header__subTitle titleAnimation">poznajmy sie</h3>
@@ -57,7 +72,7 @@
               </p>
             </article>
             <article class="about__box load">
-              <h4 class="about__box__title titleAnimation ">kierunek rozwoju</h4>
+              <h4 class="about__box__title titleAnimation">kierunek rozwoju</h4>
               <p class="about__box__text textAnimation">
                 Tak jak wspomniałem wcześniej, największą przyjemność sprawia mi frontend.
                 Z tego powodu chciałbym rozwijać swoje umiejętności przede wszystkim w tym
@@ -107,24 +122,40 @@
           <!-- projects -->
           <section class="projects" id="projects">
             <h4 class="projects__title titleAnimation">wybrane projekty</h4>
-            <div class="projects__box" >
-              <!-- project -->     
+            <div class="projects__box">
+              <!-- project -->
               <article class="project">
-                <div class="project__image shadow imageAnimation " style='background-image: url("./assets/banners/quickweek_banner.jpg")'>
+                <div class="project__image shadow imageAnimation">
+                  <picture>
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="./assets/banners/479/quickweek_479.jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./assets/banners/767/quickweek_767.jpg"
+                    />
+                    <img
+                      class="project__image__photo"
+                      src="./assets/banners/1366/quickweek_1366.jpg"
+                      alt="banner"
+                    />
+                  </picture>
                   <div class="project__image__badge">
                     <h2 class="project__image__badge__number">01</h2>
                   </div>
                 </div>
-                <div class="project__content ">
+                <div class="project__content">
                   <h2 class="project__content__title titleAnimation">Quick Week App</h2>
                   <h4 class="project__content__tags titleAnimation">
                     React Native, Redux, Strapi, Mongo DB, CSS, NODE JS, GIT, Figma
                   </h4>
                   <p class="project__content__text textAnimation">
-                    Aplikacja pozwala na wyszukiwanie ciekawych miejsc i wydarzeń we Wrocławiu. 
-                    Po zalogowaniu możliwe jest tworzenie listy ulubionych atrakcji oraz terminarza wydarzeń.
-                    Do wykonania tego projektu wykorzystałem między innymi <b>React Native</b> oraz <b>Redux</b>.
-                    Aplikacja dostępna jest na <b>Google Play</b>.  
+                    Aplikacja pozwala na wyszukiwanie ciekawych miejsc i wydarzeń we
+                    Wrocławiu. Po zalogowaniu możliwe jest tworzenie listy ulubionych
+                    atrakcji oraz terminarza wydarzeń. Do wykonania tego projektu
+                    wykorzystałem między innymi <b>React Native</b> oraz <b>Redux</b>.
+                    Aplikacja dostępna jest na <b>Google Play</b>.
                   </p>
                 </div>
                 <div class="project__buttons">
@@ -141,20 +172,38 @@
                 </div>
               </article>
               <article class="project">
-                <div class="project__image shadow imageAnimation " style='background-image: url("./assets/banners/agapodo_banner.jpg")'>
+                <div class="project__image shadow imageAnimation">
+                  <picture>
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="./assets/banners/479/aga_479.jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./assets/banners/767/aga_767.jpg"
+                    />
+                    <img
+                      class="project__image__photo"
+                      src="./assets/banners/1366/aga_1366.jpg"
+                      alt="banner"
+                    />
+                  </picture>
+
                   <div class="project__image__badge">
                     <h2 class="project__image__badge__number">02</h2>
                   </div>
                 </div>
-                <div class="project__content ">
+                <div class="project__content">
                   <h2 class="project__content__title titleAnimation">www.agapodo.pl</h2>
                   <h4 class="project__content__tags titleAnimation">
                     React, GraphQL, Styled Components, Strapi, Mongo DB
                   </h4>
                   <p class="project__content__text textAnimation">
-                    Strona internetowa wykonana dla Wrocławskiej fotograf. Do realizaji tego projektu wykorzystałem
-                    m.in <b>Reacta</b> oraz <b>Styled Components</b>. Oprócz samej witryny, zlecenie przewidywało stworzenie panelu administrcyjnego. 
-                    Do realizacji tego zadania wykorzystałem <b>Strapi</b> oraz <b>Mongo DB</b>. 
+                    Strona internetowa wykonana dla Wrocławskiej fotograf. Do realizaji
+                    tego projektu wykorzystałem m.in <b>Reacta</b> oraz
+                    <b>Styled Components</b>. Oprócz samej witryny, zlecenie przewidywało
+                    stworzenie panelu administrcyjnego. Do realizacji tego zadania
+                    wykorzystałem <b>Strapi</b> oraz <b>Mongo DB</b>.
                   </p>
                 </div>
                 <div class="project__buttons">
@@ -171,20 +220,36 @@
                 </div>
               </article>
               <article class="project">
-                <div class="project__image shadow imageAnimation " style='background-image: url("./assets/banners/randomgridgallery_banner.jpg")'>
+                <div class="project__image shadow imageAnimation">
+                  <picture>
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="./assets/banners/479/gallery_479.jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./assets/banners/767/gallery_479.jpg"
+                    />
+                    <img
+                      class="project__image__photo"
+                      src="./assets/banners/1366/gallery_1366.jpg"
+                      alt="banner"
+                    />
+                  </picture>
                   <div class="project__image__badge">
                     <h2 class="project__image__badge__number">03</h2>
                   </div>
                 </div>
-                <div class="project__content ">
-                  <h2 class="project__content__title titleAnimation">random-grid-gallery</h2>
-                  <h4 class="project__content__tags titleAnimation">
-                    React, CSS, GIT
-                  </h4>
+                <div class="project__content">
+                  <h2 class="project__content__title titleAnimation">
+                    random-grid-gallery
+                  </h2>
+                  <h4 class="project__content__tags titleAnimation">React, CSS, GIT</h4>
                   <p class="project__content__text textAnimation">
-                    Paczka <b>NPM</b> umożliwiająca stworzenie galerii z losowym układem zdjęć. Biblioteka posiada kilka
-                    opcjii. Pozwala m.in na ustalenie ilości kolumn oraz na dodanie do galerii, nie tylko tablicy 
-                    adresów zdjęć ale również tablicy komponentów.
+                    Paczka <b>NPM</b> umożliwiająca stworzenie galerii z losowym układem
+                    zdjęć. Biblioteka posiada kilka opcjii. Pozwala m.in na ustalenie
+                    ilości kolumn oraz na dodanie do galerii, nie tylko tablicy adresów
+                    zdjęć ale również tablicy komponentów.
                   </p>
                 </div>
                 <div class="project__buttons">
@@ -201,21 +266,39 @@
                 </div>
               </article>
               <article class="project">
-                <div class="project__image shadow imageAnimation " style='background-image: url("./assets/banners/kaha_banner.jpg")'>
+                <div class="project__image shadow imageAnimation">
+                  <picture>
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="./assets/banners/479/kaha_479.jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./assets/banners/767/kaha_767.jpg"
+                    />
+                    <img
+                      class="project__image__photo"
+                      src="./assets/banners/1366/kaha_1366.jpg"
+                      alt="banner"
+                    />
+                  </picture>
                   <div class="project__image__badge">
                     <h2 class="project__image__badge__number">04</h2>
                   </div>
                 </div>
-                <div class="project__content ">
-                  <h2 class="project__content__title titleAnimation">www.kaha-studio.pl</h2>
+                <div class="project__content">
+                  <h2 class="project__content__title titleAnimation">
+                    www.kaha-studio.pl
+                  </h2>
                   <h4 class="project__content__tags titleAnimation">
                     React, Redux, SCSS, Node JS, Mongo DB
                   </h4>
                   <p class="project__content__text textAnimation">
-                    Mój pierwszy komercyjny projekt, wykonany dla dekorator wnętrz na początku <b>2020 roku</b>. 
-                    Projekt przewidywał wykonanie minimalistycznej strony internetowej oraz panelu administracyjnego.
-                    Do realizacji tego zadania wykorzystałem <b>Reacta i Reduxa</b>. Panel administracyjny stworzyłem od podstaw, 
-                    w oparciu o <b>Mongo DB</b>.
+                    Mój pierwszy komercyjny projekt, wykonany dla dekorator wnętrz na
+                    początku <b>2020 roku</b>. Projekt przewidywał wykonanie
+                    minimalistycznej strony internetowej oraz panelu administracyjnego. Do
+                    realizacji tego zadania wykorzystałem <b>Reacta i Reduxa</b>. Panel
+                    administracyjny stworzyłem od podstaw, w oparciu o <b>Mongo DB</b>.
                   </p>
                 </div>
                 <div class="project__buttons">
@@ -232,19 +315,35 @@
                 </div>
               </article>
               <article class="project">
-                <div class="project__image shadow imageAnimation " style='background-image: url("./assets/banners/kingboon_banner.jpg")'>
+                <div class="project__image shadow imageAnimation">
+                  <picture>
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="./assets/banners/479/kingboon_479.jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./assets/banners/767/kingboon_767.jpg"
+                    />
+                    <img
+                      class="project__image__photo"
+                      src="./assets/banners/1366/kingboon_1366.jpg"
+                      alt="banner"
+                    />
+                  </picture>
                   <div class="project__image__badge">
                     <h2 class="project__image__badge__number">05</h2>
                   </div>
                 </div>
-                <div class="project__content ">
-                  <h2 class="project__content__title titleAnimation">www.kingboon.asia</h2>
-                  <h4 class="project__content__tags titleAnimation">
-                    HTML, JS, CSS
-                  </h4>
+                <div class="project__content">
+                  <h2 class="project__content__title titleAnimation">
+                    www.kingboon.asia
+                  </h2>
+                  <h4 class="project__content__tags titleAnimation">HTML, JS, CSS</h4>
                   <p class="project__content__text textAnimation">
-                    Strona internetowa, w formie wizytówki, wykonana dla firmy handlującej owocami z azji. 
-                    Klientowi zależało głównie na przejrzystym układzie strony oraz na jej responsywności.  
+                    Strona internetowa, w formie wizytówki, wykonana dla firmy handlującej
+                    owocami z azji. Klientowi zależało głównie na przejrzystym układzie
+                    strony oraz na jej responsywności.
                   </p>
                 </div>
                 <div class="project__buttons">
@@ -261,19 +360,33 @@
                 </div>
               </article>
               <article class="project">
-                <div class="project__image shadow imageAnimation " style='background-image: url("./assets/banners/woodrejs_banner.jpg")'>
+                <div class="project__image shadow imageAnimation">
+                  <picture>
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="./assets/banners/479/woodrejs_479.jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./assets/banners/767/woodrejs_767.jpg"
+                    />
+                    <img
+                      class="project__image__photo"
+                      src="./assets/banners/1366/woodrejs_1366.jpg"
+                      alt="banner"
+                    />
+                  </picture>
                   <div class="project__image__badge">
                     <h2 class="project__image__badge__number">06</h2>
                   </div>
                 </div>
-                <div class="project__content ">
+                <div class="project__content">
                   <h2 class="project__content__title titleAnimation">www.woodrejs.com</h2>
-                  <h4 class="project__content__tags titleAnimation">
-                    HTML, JS, CSS
-                  </h4>
+                  <h4 class="project__content__tags titleAnimation">HTML, JS, CSS</h4>
                   <p class="project__content__text textAnimation">
-                    Strona internetowa, na której oferuje swoje usługi tworzenia stron internetowych. Witryna jest w pełni responsywna.
-                    Do jej wykonania wykorzystałem  <b>HTML, JS, CSS</b>.
+                    Strona internetowa, na której oferuje swoje usługi tworzenia stron
+                    internetowych. Witryna jest w pełni responsywna. Do jej wykonania
+                    wykorzystałem <b>HTML, JS, CSS</b>.
                   </p>
                 </div>
                 <div class="project__buttons">
@@ -337,8 +450,9 @@
             <h4 class="footer__box__title titleAnimation">kontakt</h4>
             <article class="footer__box__content">
               <p class="footer__box__content__text textAnimation">
-                Miło było mi gościć Cię na mojej stronie. Mam nadzieje że jeszcze się zobaczymy. Gdybyś chciał się ze mną
-                skontaktować, to poniżej znajdziesz moje dane. 
+                Miło było mi gościć Cię na mojej stronie. Mam nadzieje że jeszcze się
+                zobaczymy. Gdybyś chciał się ze mną skontaktować, to poniżej znajdziesz
+                moje dane.
               </p>
               <address class="address">
                 <table class="address__box">

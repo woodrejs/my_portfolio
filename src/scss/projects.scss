@@ -27,13 +27,13 @@
 
   &__image {
     width: 100%;
-    height: 270px;
     overflow: hidden;
-    background-image: url("../../dist/assets/images/project_01.jpg");
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
     position: relative;
+
+    &__photo {
+      width: 100%;
+      height: 100%;
+    }
     &__badge {
       position: absolute;
       top: 0;
@@ -53,7 +53,7 @@
     &__title {
       padding: 10px 0;
       transform-origin: left;
-      padding-top: 20px;
+      padding-top: 30px;
     }
     &__tags {
       text-transform: capitalize;
